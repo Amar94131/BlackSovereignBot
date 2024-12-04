@@ -117,7 +117,7 @@ async def pm_text(bot, message):
         await auto_filter(bot, message)
     else:    
         await message.reply_text(
-             text=f"<b>🙋 ʜᴇʏ {user} 😍 ,\n\n𝒀𝒐𝒖 𝒄𝒂𝒏 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏𝒍𝒚 𝒐𝒏 𝒐𝒖𝒓 <a href=https://t.me/MovieHubForUs>𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑.</a> 𝒀𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒂𝒍𝒍𝒐𝒘𝒆𝒅 𝒕𝒐 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕. 𝑷𝒍𝒆𝒂𝒔𝒆 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒎𝒐𝒗𝒊𝒆 𝒈𝒓𝒐𝒖𝒑 𝒃𝒚 𝒄𝒍𝒊𝒄𝒌𝒊𝒏𝒈 𝒐𝒏 𝒕𝒉𝒆 <a href=https://t.me/MovieHubForUs> 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬</a> 𝒃𝒖𝒕𝒕𝒐𝒏 𝒈𝒊𝒗𝒆𝒏 𝒃𝒆𝒍𝒐𝒘 𝒂𝒏𝒅 𝒔𝒆𝒂𝒓𝒄𝒉 𝒚𝒐𝒖𝒓 𝒇𝒂𝒗𝒐𝒓𝒊𝒕𝒆 𝒎𝒐𝒗𝒊𝒆 𝒕𝒉𝒆𝒓𝒆 👇\n\n<blockquote>आप केवल हमारे <a href=https://t.me/MovieHubForUs>𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 </a> पर ही 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 कर सकते हो । आपको 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕 पर 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 करने की 𝑷𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏 नहीं है कृपया नीचे दिए गए <a href=https://t.me/MovieHubForUs>𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬</a> वाले 𝑩𝒖𝒕𝒕𝒐𝒏 पर क्लिक करके हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 को 𝑱𝒐𝒊𝒏 करें और वहां पर अपनी मनपसंद 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 सर्च करें ।</blockquote></b>",   
+             text=f"<b>🙋 ʜᴇʏ {user} 😍 ,\n\n⚡ आप यहाँ से मूवी नहीं ले सकते। 🔒 यह सेवा केवल प्रीमियम उपयोगकर्ता के लिए है।\n\n<blockquote>⚡YOU CAN'T GETS MOVIES FROM HERE. THIS FEATURE IS FOR PREMIUM USER ONLY</blockquote></b>",   
              reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/MovieHubForUs")]])
         )
         await bot.send_message(
@@ -1652,18 +1652,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
                     #InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                    InlineKeyboardButton('⚜️ Rᴇғᴇʀ & Gᴇᴛ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data='reffff')
+                    #InlineKeyboardButton('⚜️ Rᴇғᴇʀ & Gᴇᴛ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data='reffff')
                 ],[
-                    InlineKeyboardButton('🌳 Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton('⚜️ sᴜᴘᴘᴏʀᴛ ', callback_data='channels')
+                    InlineKeyboardButton('📜 TRENDING', callback_data="topsearch"),
+                    InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ 🚨', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('🦧 ʜᴇʟᴘ ', callback_data='help'),
-                    InlineKeyboardButton('❤️ ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('👷 ʜᴇʟᴘ ', callback_data='help'),
+                    InlineKeyboardButton('❤️ ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 🎉', callback_data='donation'),
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..🍁', callback_data="shortlink_info")
+                    InlineKeyboardButton('🎟️ Pʀᴇᴍɪᴜᴍ ', callback_data="premium_info")
                 ],[
-                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
+                    #InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..🍁', callback_data="shortlink_info")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -2044,7 +2044,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('😊Aᴅᴍɪɴ', callback_data='admic'),
             InlineKeyboardButton('💔ɢʀᴏᴜᴘ', callback_data='group')
         ], [
-            #InlineKeyboardButton('🩸YouTube', callback_data='YOUTUBE'),
+            InlineKeyboardButton('🩸YouTube', callback_data='YOUTUBE'),
             InlineKeyboardButton('🎵SONG', callback_data='SONG'),
         ], [
             InlineKeyboardButton('🔻Instagram', callback_data='INSTAGRAM')
