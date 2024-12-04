@@ -50,18 +50,18 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
                     #InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                    InlineKeyboardButton('⚜️ Rᴇғᴇʀ & Gᴇᴛ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data='reffff')
+                    #InlineKeyboardButton('⚜️ Rᴇғᴇʀ & Gᴇᴛ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data='reffff')
                 ],[
-                    InlineKeyboardButton('🌳 Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton('⚜️ sᴜᴘᴘᴏʀᴛ', callback_data='channels')
+                    InlineKeyboardButton('📜 TRENDING', callback_data="topsearch"),
+                    InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ 🚨', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('🦧 ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('❤️ ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('👷 ʜᴇʟᴘ ', callback_data='help'),
+                    InlineKeyboardButton('❤️ ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 🎉', callback_data='donation'),
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..🍁', callback_data="shortlink_info")
+                    InlineKeyboardButton('🎟️ Pʀᴇᴍɪᴜᴍ ', callback_data="premium_info")
                 ],[
-                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
+                    #InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..🍁', callback_data="shortlink_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -103,7 +103,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url=invite_link.invite_link
+                    "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url=invite_link.AUTH_CHANNEL
                 )
             ]
         ]
@@ -127,18 +127,18 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
                     #InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                    InlineKeyboardButton('⚜️ Rᴇғᴇʀ & Gᴇᴛ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data='reffff')
+                    #InlineKeyboardButton('⚜️ Rᴇғᴇʀ & Gᴇᴛ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data='reffff')
                 ],[
-                    InlineKeyboardButton('🌳 Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton('⚜️ sᴜᴘᴘᴏʀᴛ ', callback_data='channels')
+                    InlineKeyboardButton('📜 TRENDING', callback_data="topsearch"),
+                    InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ 🚨', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('🦧 ʜᴇʟᴘ ', callback_data='help'),
-                    InlineKeyboardButton('❤️ ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('👷 ʜᴇʟᴘ ', callback_data='help'),
+                    InlineKeyboardButton('❤️ ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 🎉', callback_data='donation'),
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..🍁', callback_data="shortlink_info")
+                    InlineKeyboardButton('🎟️ Pʀᴇᴍɪᴜᴍ ', callback_data="premium_info")
                 ],[
-                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
+                    #InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..🍁', callback_data="shortlink_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -632,7 +632,7 @@ async def start(client, message):
               InlineKeyboardButton("⚡ Hᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ⚡", url=HOW_TO_VERIFY)
            ]]
            l = await message.reply_text(
-            text="<b>♨️ YOU ARE NOT VERIFIED !\nKINDLY VERIFY TO CONTINUE & YOU CAN GET UNLIMITED ACCESS FOR 24 HOURS ✅\n\n<blockquote>⚜️ इस BOT से MOVIE प्राप्त करने के लिए आपको VERIFY करना आवश्यक है VERIFY करने के बाद आप 24 घंटे तक UNLIMITED MOVIES प्राप्त कर सकते हो।</blockquote>\n\n🎯 IF YOU ARE HAVING ANY PROBLEM WITH VERIFICATION SEND SCREENSHOT SCREEN RECORDING SHOWING THE PROBLEM TO @Contact_Deendayal_bot AND ASK FOR HELP.\n\n<blockquote>🔥 अगर आप VERIFY नहीं करना चाहते तो आप PREMIUM ले सकते हो, PRIMIUM लेने के बाद आप UNLIMITED MOVIES प्राप्त कर पाओगे और आपको VERIFY करने कोई जरूरत नहीं है\n\nPLAN DETAILS के लिए CLICK करें /plan</blockquote></b>",
+            text="<b>♨️ YOU ARE NOT VERIFIED !\nKINDLY VERIFY TO CONTINUE & YOU CAN GET UNLIMITED ACCESS FOR 1 HOURS ✅\n\n<blockquote>⚜️ इस BOT से MOVIE प्राप्त करने के लिए आपको VERIFY करना आवश्यक है VERIFY करने के बाद आप 1 घंटे तक UNLIMITED MOVIES प्राप्त कर सकते हो।</blockquote>\n\n🎯 IF YOU ARE HAVING ANY PROBLEM WITH VERIFICATION SEND SCREENSHOT SCREEN RECORDING SHOWING THE PROBLEM TO @Movie_Download_Hub_Bot AND ASK FOR HELP.\n\n<blockquote>🔥 अगर आप VERIFY नहीं करना चाहते तो आप PREMIUM ले सकते हो, PRIMIUM लेने के बाद आप UNLIMITED MOVIES प्राप्त कर पाओगे और आपको VERIFY करने कोई जरूरत नहीं है\n\nPLAN DETAILS के लिए CLICK करें /plan</blockquote></b>",
             protect_content=False,
             reply_markup=InlineKeyboardMarkup(btn)
            )
