@@ -7,22 +7,6 @@ from datetime import datetime
 
 from telegram import Bot
 
-TOKEN = "YOUR_BOT_TOKEN"
-bot = Bot(token=TOKEN)
-
-CHANNELS = ["@MovieDawnloadHub", "@MovieDawnloadhub_Updated", "@Dawnloadbot_support"]
-
-def check_all_subscriptions(user_id):
-    for channel in CHANNELS:
-        try:
-            member = bot.get_chat_member(channel, user_id)
-            if member.status not in ['member', 'administrator', 'creator']:
-                return False
-        except:
-            return False
-    return True
-    
-
 @Client.on_message(filters.command("verification") & filters.private & filters.user(ADMINS))
 async def vrfs(client, message):
     today = await vr_db.get_vr_count("today")
