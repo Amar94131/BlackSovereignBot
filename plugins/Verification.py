@@ -5,8 +5,6 @@ from database.verify_db import vr_db
 from info import ADMINS
 from datetime import datetime
 
-from telegram import Bot
-
 @Client.on_message(filters.command("verification") & filters.private & filters.user(ADMINS))
 async def vrfs(client, message):
     today = await vr_db.get_vr_count("today")
