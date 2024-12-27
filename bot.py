@@ -43,7 +43,7 @@ from lazybot.clients import initialize_clients
 from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
-TOKEN = "YOUR_BOT_TOKEN"
+TOKEN = "7381399131:AAHtezPzBUhb6sULEJY44FUIDZ9ThnnuC34"
 bot = Bot(token=TOKEN)
 
 # चैनल लिस्ट
