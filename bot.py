@@ -19,7 +19,7 @@ logging.basicConfig(
 logging.getLogger("aiohttp").setLevel(logging.ERROR)
 logging.getLogger("aiohttp.web").setLevel(logging.ERROR)
 
-
+from plugins.Verification import check_all_subscriptions
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
@@ -39,6 +39,44 @@ from pyrogram import idle
 from lazybot import LazyPrincessBot
 from util.keepalive import ping_server
 from lazybot.clients import initialize_clients
+
+from telegram import Bot, Update
+from telegram.ext import Updater, CommandHandler, CallbackContext
+
+TOKEN = "YOUR_BOT_TOKEN"  # अपना बॉट टोकन डालें
+CHANNELS = ["@Channel1", "@Channel2", "@Channel3"]  # चैनल usernames
+bot = Bot(token=TOKEN)
+
+# सभी चैनल्स की सदस्यता जांचने का फंक्शन
+def check_all_subscriptions(user_id):
+    for channel in CHANNELS:
+        try:
+            member = bot.get_chat_member(channel, user_id)
+            if member.status not in ['member', 'administrator', 'creator']:
+                return False
+        except:
+            return False
+    return True
+
+# /start कमांड हैंडलर
+def start(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    if not check_all_subscriptions(user_id):
+        channels_list = "\n".join([f"- {channel}" for channel in CHANNELS])
+        update.message.reply_text(
+            f"आपको पहले इन सभी चैनल्स को जॉइन करना होगा:\n\n{channels_list}\n\n"
+            "सभी चैनल जॉइन करने के बाद फिर से `/start` दबाएं।"
+        )
+        return
+    update.message.reply_text("आप सफलतापूर्वक वेरिफाई हो गए हैं! अब आप बॉट का उपयोग कर सकते हैं।")
+
+# बॉट सेटअप और स्टार्ट करें
+updater = Updater(token=TOKEN, use_context=True)
+dispatcher = updater.dispatcher
+dispatcher.add_handler(CommandHandler("start", start))
+
+updater.start_polling()
+updater.idle()
 
 
 ppath = "plugins/*.py"
@@ -88,8 +126,7 @@ async def Lazy_start():
     await app.setup()
     bind_address = "0.0.0.0"
     await web.TCPSite(app, bind_address, PORT).start()
-    await idle()
-
+    await idle()                     
 
 if __name__ == '__main__':
     try:
