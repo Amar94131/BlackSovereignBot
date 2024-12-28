@@ -44,7 +44,7 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002463606648') # request chan
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Dawnload94:Dawnload94@dawnload94.mp9gv.mongodb.net/?retryWrites=true&w=majority&appName=Dawnload94")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Dawnload94")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'moviedawnloadhub')
 
 # index movie Notification & update channel 
 DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', False))  # NOTIFICATION On ( True ) / Off ( False )
