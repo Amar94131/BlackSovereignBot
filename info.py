@@ -141,7 +141,7 @@ if HAS_SSL:
 else:
     URL = "http://{}/".format(FQDN)
 
-    FQDN = ("movie-hub-1xib.onrender.com")
+   
 
 #ADD_REACTION
 REACTIONS = ["❤️‍🔥", "❤️", "🔥", "🙋","😢", "🎉", "🤩", "🙏", "👌", "🕊"]
