@@ -27,7 +27,7 @@ TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
 
-@Client.on_message(filters.command("start") & filters.incoming)
+@Client.on_message(filters.command("start") & filters.incoming & subscribed)
 async def start(client, message):
     await message.react(emoji=random.choice(REACTIONS), big=True) 
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
