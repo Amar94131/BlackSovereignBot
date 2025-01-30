@@ -17,6 +17,24 @@ API_ID = int(environ.get('API_ID', '26513107'))
 API_HASH = environ.get('API_HASH', 'f14ce4b58dc8812cfc9665588472f2d4')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7381399131:AAHtezPzBUhb6sULEJY44FUIDZ9ThnnuC34")
 
+
+
+#force sub channel id, if you want enable force sub (Use different ForceSub Channel ID)
+FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1002071945738"))
+FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "-1001972961497"))
+FORCE_SUB_CHANNEL_3 = int(os.environ.get("FORCE_SUB_CHANNEL_3", "-1001987271131"))
+FORCE_SUB_CHANNEL_4 = int(os.environ.get("FORCE_SUB_CHANNEL_4", "-1002038066716"))
+
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/pNw.jpg")
+
+
+
+
+
+
+
+
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
