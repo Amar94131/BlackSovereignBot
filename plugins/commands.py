@@ -21,7 +21,7 @@ from database.connections_mdb import active_connection
 import re, asyncio, os, sys
 import json
 import base64
-from Princess.helper_function import subscribed
+from helper_func import subscribed
 logger = logging.getLogger(__name__)
 
 TIMEZONE = "Asia/Kolkata"
