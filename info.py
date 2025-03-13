@@ -16,23 +16,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '26513107'))
 API_HASH = environ.get('API_HASH', 'f14ce4b58dc8812cfc9665588472f2d4')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7381399131:AAHtezPzBUhb6sULEJY44FUIDZ9ThnnuC34")
-
-
-
-#force sub channel id, if you want enable force sub (Use different ForceSub Channel ID)
-FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1002071945738"))
-FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "-1001972961497"))
-FORCE_SUB_CHANNEL_3 = int(os.environ.get("FORCE_SUB_CHANNEL_3", "-1001987271131"))
-FORCE_SUB_CHANNEL_4 = int(os.environ.get("FORCE_SUB_CHANNEL_4", "-1002038066716"))
-
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/pNw.jpg")
-
-
-
-
-
+BOT_TOKEN = environ.get('BOT_TOKEN', "7381399131:")
 
 
 
@@ -61,9 +45,9 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002463606648') # request chan
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Dawnload94:Dawnload94@dawnload94.mp9gv.mongodb.net/?retryWrites=true&w=majority&appName=Dawnload94")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Dawnload94")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'moviedawnloadhub')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://:@.mp9gv.mongodb.net/?retryWrites=true&w=majority&appName=Dawnload94")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 
 # index movie Notification & update channel 
 DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', False))  # NOTIFICATION On ( True ) / Off ( False )
