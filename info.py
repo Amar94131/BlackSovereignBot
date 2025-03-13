@@ -14,9 +14,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '26513107'))
-API_HASH = environ.get('API_HASH', 'f14ce4b58dc8812cfc9665588472f2d4')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7381399131:")
+API_ID = int(environ.get('API_ID', '5892963'))
+API_HASH = environ.get('API_HASH', '8eef25dc6c4cbf2f6fafb9dd4ec6d7b5')
+BOT_TOKEN = environ.get('BOT_TOKEN', "2085742606:AAF0X_u9cefB00Ftz89T5tNThYeIqeK-jJk")
 
 
 
@@ -24,7 +24,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "7381399131:")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg https://graph.org/file/5303692652d91d52180c2.jpg https://graph.org/file/425b6f46efc7c6d64105f.jpg https://graph.org/file/876867e761c6c7a29855b.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/1de1b86673b5d2c1f2908.jpg https://telegra.ph/file/3bee89db44411ca42215c.jpg https://telegra.ph/file/f6bbad1e8c0e7639898c1.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/60e8a622b14796e4448ce.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
@@ -33,21 +33,21 @@ CODE = (environ.get('CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg'))
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1928404158').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002462984918').split()] #Channel id for auto indexing ( make sure bot is admin )
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002440903477')) #Log channel id ( make sure bot is admin )
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002495048515')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002428902120')) # add premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '-1002204726881') #Channel / Group Id for force sub ( make sure bot is admin )
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1165094443').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001315568432').split()] #Channel id for auto indexing ( make sure bot is admin )
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001743984455')) #Log channel id ( make sure bot is admin )
+DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '0')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '0')) # add premium logs channel id
+auth_channel = environ.get('AUTH_CHANNEL', '-1002025820558') #Channel / Group Id for force sub ( make sure bot is admin )
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002463606648') # request channel id ( make sure bot is admin ).
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001997565102') # support group id ( make sure bot is admin )
+reqst_channel = environ.get('REQST_CHANNEL_ID', '0') # request channel id ( make sure bot is admin ).
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://:@.mp9gv.mongodb.net/?retryWrites=true&w=majority&appName=Dawnload94")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://gtxprime:gtxprime@cluster0.iknrzio.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # index movie Notification & update channel 
 DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', False))  # NOTIFICATION On ( True ) / Off ( False )
@@ -70,15 +70,15 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MovieDawnloadHub_Tutorial') # T
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
 #Channel & Group link 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieHubForUs')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MovieDawnloadHub')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Movie_Dawnload_Hub_bot')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+TzlCdhPF4g5lNTU1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/CipherGround')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/XCipher')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/gtxprime')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/')
 
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1165094443').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_grp = environ.get('AUTH_GROUP')
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1165094443').split()]
+auth_grp = environ.get('-1002209885072')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
@@ -87,12 +87,12 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True)) # True if you want no
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-MSG_ALRT = environ.get('MSG_ALRT', 'Movie_Dawnload_Hub')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
+MSG_ALRT = environ.get('MSG_ALRT', '@Movie_Dawnload_Hub')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/CipherGround') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
-AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
+AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
