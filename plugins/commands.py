@@ -21,14 +21,14 @@ from database.connections_mdb import active_connection
 import re, asyncio, os, sys
 import json
 import base64
-from helper_func import subscribed
+
 logger = logging.getLogger(__name__)
 
 TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
 
-@Client.on_message(filters.command("start") & filters.incoming & subscribed)
+@Client.on_message(filters.command("start") & filters.incoming )
 async def start(client, message):
     await message.react(emoji=random.choice(REACTIONS), big=True) 
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
